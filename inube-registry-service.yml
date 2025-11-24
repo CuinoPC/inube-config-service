@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-  name: inube-registry-service
+    name: inube-registry-service
 
 eureka:
   client:
@@ -12,7 +12,7 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 0
 
-managment:
+management:
   endpoints:
     web:
       exposure:
