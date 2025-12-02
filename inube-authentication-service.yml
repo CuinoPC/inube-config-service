@@ -6,8 +6,8 @@ spring:
     name: inube-authentication-service
   datasource:
     url: jdbc:postgresql://localhost:5437/inube
-    usernaame : inube
-    password: inube
+    usernaame : aba
+    password: aba
     dirver-class-name: org.postgresql.dirver
   jpa:
     hibernate.ddl-auto: none
