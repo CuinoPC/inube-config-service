@@ -1,0 +1,33 @@
+server:
+  port: 8108
+
+spring:
+  application:
+    name: inube-authentication-service
+  datasource:
+    url: jdbc:postgresql://localhost:5437/inube
+    usernaame : inube
+    password: inube
+    dirver-class-name: org.postgresql.dirver
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+jwt:
+  secret:
+
+eureka:
+  client:
+    serviceUrl:
+      defautlZone: http://localhost:8106/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+    healtthCheck: 
+      enabled: true
+    instance:
+      leaseRenewalIntervalInSeconds: 5
+      leaseExpirationDurationInsecond: 15
+      preferIpAddress: true
