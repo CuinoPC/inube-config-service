@@ -6,9 +6,9 @@ spring:
     name: inube-authentication-service
   datasource:
     url: jdbc:postgresql://localhost:5437/aba
-    usernaame : aba
+    username : aba
     password: aba
-    dirver-class-name: org.postgresql.dirver
+    driver-class-name: org.postgresql.dirver
   jpa:
     hibernate.ddl-auto: none
     generate-ddl: false
@@ -22,12 +22,12 @@ jwt:
 eureka:
   client:
     serviceUrl:
-      defautlZone: http://localhost:8106/eureka/
+      defaultZone: http://localhost:8106/eureka/
     registerWithEureka: true
     fetchRegistry: true
-    healtthCheck: 
+    healthCheck: 
       enabled: true
     instance:
       leaseRenewalIntervalInSeconds: 5
-      leaseExpirationDurationInsecond: 15
+      leaseExpirationDurationInSeconds: 15
       preferIpAddress: true
