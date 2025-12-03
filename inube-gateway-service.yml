@@ -7,7 +7,7 @@ spring:
     gateway:
       discovery:
         locator:
-          enable: false
+          enabled: false
           lower-case-service-id: true
       routes:
         - id: inube-auth-auth
@@ -38,11 +38,11 @@ eureka:
       defaultZone: http://localhost:8106/eureka/
     registerWithEureka: true
     fetchRegistry: true
-    healtthCheck:
+    healthCheck:
       enabled: true
   instance:
     leaseRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInsecond: 15
+    leaseExpirationDurationInSeconds: 15
     preferIpAddress: true
 
 jwt:
