@@ -8,7 +8,7 @@ spring:
     url: jdbc:postgresql://localhost:5437/aba
     username : aba
     password: aba
-    driver-class-name: org.postgresql.dirver
+    driver-class-name: org.postgresql.driver
   jpa:
     hibernate.ddl-auto: none
     generate-ddl: false
