@@ -5,7 +5,7 @@ spring:
   application:
     name: inube-authentication-service
   datasource:
-    url: jdbc:postgresql://localhost:5437/inube
+    url: jdbc:postgresql://localhost:5437/aba
     usernaame : aba
     password: aba
     dirver-class-name: org.postgresql.dirver
